@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CyberGuide Pro - Plateforme professionnelle de veille cybersécurité">
+    <meta name="author" content="Bioplants - Département Cybersécurité">
+    <title>CyberGuide Pro | Plateforme de Veille Cybersécurité</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Background Grid -->
+    <div class="background-grid"></div>
+    <div class="background-gradient"></div>
+    
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="branding">
+                    <div class="brand-icon">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <div class="brand-content">
+                        <h1 class="brand-title">CyberGuide Pro</h1>
+                        <p class="brand-subtitle">Plateforme de Veille Cybersécurité</p>
+                    </div>
+                </div>
+                
+                <div class="header-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Copies</span>
+                        <span class="meta-value" id="copyCounter">0</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Heure</span>
+                        <span class="meta-value" id="currentTime">00:00:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- Section: Quick Access -->
+            <section class="section section-quick-access">
+                <header class="section-header">
+                    <div class="section-header-content">
+                        <div class="section-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <div class="section-info">
+                            <h2 class="section-title">Accès Rapide</h2>
+                            <p class="section-description">Outils de veille et communication</p>
+                        </div>
+                    </div>
+                </header>
+                
+                <div class="quick-access-grid">
+                    <a href="https://feedly.com" target="_blank" class="access-card" data-platform="feedly">
+                        <div class="card-overlay"></div>
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-rss"></i>
+                            </div>
+                            <div class="card-badge">RSS</div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Feedly</h3>
+                            <p class="card-description">Agrégateur de flux de veille</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="card-link">Accéder à la plateforme</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                    
+                    <a href="https://outlook.office.com" target="_blank" class="access-card" data-platform="outlook">
+                        <div class="card-overlay"></div>
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="card-badge">Mail</div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Outlook</h3>
+                            <p class="card-description">Messagerie professionnelle</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="card-link">Accéder à la plateforme</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.perplexity.ai" target="_blank" class="access-card" data-platform="perplexity">
+                        <div class="card-overlay"></div>
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="card-badge">IA</div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Perplexity AI</h3>
+                            <p class="card-description">Moteur de recherche intelligent</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="card-link">Accéder à la plateforme</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            
+            <!-- Section: Trusted Sources -->
+            <section class="section section-sources">
+                <header class="section-header">
+                    <div class="section-header-content">
+                        <div class="section-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="section-info">
+                            <h2 class="section-title">Sources Fiables</h2>
+                            <p class="section-description">Organismes officiels et médias spécialisés en cybersécurité</p>
+                        </div>
+                    </div>
+                </header>
+                
+                <div class="sources-grid" id="sourcesGrid">
+                    <!-- Generated by JavaScript -->
+                </div>
+            </section>
+            
+            <!-- Section: Keywords -->
+            <section class="section section-keywords">
+                <header class="section-header">
+                    <div class="section-header-content">
+                        <div class="section-icon">
+                            <i class="fas fa-hashtag"></i>
+                        </div>
+                        <div class="section-info">
+                            <h2 class="section-title">Mots-clés de Veille</h2>
+                            <p class="section-description">Termes de recherche pour Feedly et autres agrégateurs</p>
+                        </div>
+                    </div>
+                    <div class="section-actions">
+                        <button class="btn btn-outline" id="copyAllKeywordsBtn">
+                            <i class="fas fa-copy"></i>
+                            <span>Copier tous les mots-clés</span>
+                        </button>
+                    </div>
+                </header>
+                
+                <div class="keywords-grid" id="keywordsGrid">
+                    <!-- Generated by JavaScript -->
+                </div>
+            </section>
+            
+            <!-- Section: Prompt Editor -->
+            <section class="section section-prompt">
+                <header class="section-header">
+                    <div class="section-header-content">
+                        <div class="section-icon">
+                            <i class="fas fa-file-code"></i>
+                        </div>
+                        <div class="section-info">
+                            <h2 class="section-title">Template Newsletter</h2>
+                            <p class="section-description">Prompt Bioplants - Éditable et sauvegardable</p>
+                        </div>
+                    </div>
+                </header>
+                
+                <div class="editor-wrapper">
+                    <div class="editor-toolbar">
+                        <div class="toolbar-left">
+                            <div class="editor-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-font"></i>
+                                    <span id="charCount">0</span>
+                                    <span class="stat-label">caractères</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-file-word"></i>
+                                    <span id="wordCount">0</span>
+                                    <span class="stat-label">mots</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-list-ol"></i>
+                                    <span id="lineCount">0</span>
+                                    <span class="stat-label">lignes</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="toolbar-right">
+                            <button class="toolbar-btn" onclick="formatPrompt()" title="Formater le texte">
+                                <i class="fas fa-align-left"></i>
+                            </button>
+                            <button class="toolbar-btn" onclick="clearPrompt()" title="Effacer le contenu">
+                                <i class="fas fa-eraser"></i>
+                            </button>
+                            <button class="toolbar-btn" onclick="resetPrompt()" title="Restaurer le prompt original">
+                                <i class="fas fa-undo"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="editor-container">
+                        <textarea 
+                            id="promptEditor" 
+                            class="prompt-editor"
+                            placeholder="Le template de newsletter s'affichera ici..."
+                            spellcheck="false"
+                        ></textarea>
+                    </div>
+                    
+                    <div class="editor-actions">
+                        <button class="btn btn-secondary" onclick="savePrompt()">
+                            <i class="fas fa-save"></i>
+                            <span>Sauvegarder</span>
+                        </button>
+                        <button class="btn btn-primary" onclick="copyPrompt()">
+                            <i class="fas fa-copy"></i>
+                            <span>Copier le prompt</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">CyberGuide Pro - Bioplants PME</p>
+                <p class="footer-copyright">Département Cybersécurité - 2024</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Notification Container -->
+    <div class="notification-container" id="notificationContainer"></div>
+    
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
